@@ -4,6 +4,446 @@
    Fonts   : Syne (headings) + DM Sans (body)
    ============================================================ */
 
+     /* ============================================================
+     13. PROJECTS — Compact mini-card grid
+     ============================================================ */
+     .projects-section
+     {
+       background: var(--bg);
+     }
+  
+     .projects-mini-grid
+     {
+       display: grid;
+       grid-template-columns: repeat(4, 1fr);
+       gap: 20px;
+     }
+  
+     .proj-mini-card
+     {
+       background: var(--bg-card);
+       border: 1px solid var(--border);
+       border-radius: 14px;
+       padding: 22px 20px 20px;
+       display: flex;
+       flex-direction: column;
+       gap: 8px;
+       box-shadow: var(--shadow-sm);
+       transition: var(--transition);
+       position: relative;
+       overflow: hidden;
+     }
+  
+     .proj-mini-card::after
+     {
+       content: '';
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       height: 3px;
+       background: linear-gradient(90deg, var(--accent), var(--accent-2));
+       transform: scaleX(0);
+       transform-origin: left;
+       transition: transform var(--transition);
+     }
+  
+     .proj-mini-card:hover::after
+     {
+       transform: scaleX(1);
+     }
+  
+     .proj-mini-card:hover
+     {
+       transform: translateY(-6px);
+       box-shadow: var(--shadow-md);
+       border-color: transparent;
+     }
+  
+     .proj-mini-top
+     {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+     }
+  
+     .proj-mini-icon
+     {
+       width: 42px;
+       height: 42px;
+       border-radius: 11px;
+       background: color-mix(in srgb, var(--icon-color) 15%, transparent);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       font-size: 1.1rem;
+       color: var(--icon-color);
+       transition: var(--transition);
+     }
+  
+     .proj-mini-card:hover .proj-mini-icon
+     {
+       background: var(--icon-color);
+       color: #fff;
+     }
+  
+     .proj-mini-links
+     {
+       display: flex;
+       gap: 10px;
+     }
+  
+     .proj-mini-links a
+     {
+       font-size: 0.88rem;
+       color: var(--text-muted);
+       transition: color var(--transition), transform var(--transition);
+     }
+  
+     .proj-mini-links a:hover
+     {
+       color: var(--accent);
+       transform: translateY(-2px);
+     }
+  
+     .proj-mini-card h4
+     {
+       font-family: 'Syne', sans-serif;
+       font-size: 0.9rem;
+       font-weight: 700;
+       line-height: 1.35;
+       color: var(--text);
+     }
+  
+     /* Semester label */
+     .proj-sem
+     {
+       font-size: 0.72rem;
+       font-weight: 600;
+       text-transform: uppercase;
+       letter-spacing: 0.06em;
+       color: var(--accent);
+       opacity: 0.8;
+     }
+  
+     .proj-mini-card p
+     {
+       font-size: 0.78rem;
+       color: var(--text-muted);
+       line-height: 1.6;
+       flex: 1;
+     }
+  
+     .proj-mini-tags
+     {
+       display: flex;
+       flex-wrap: wrap;
+       gap: 6px;
+       margin-top: 4px;
+     }
+  
+     .proj-mini-tags span
+     {
+       background: var(--bg-alt);
+       border: 1px solid var(--border);
+       border-radius: 50px;
+       padding: 3px 10px;
+       font-size: 0.68rem;
+       font-weight: 600;
+       color: var(--accent);
+     }
+  
+     /* ============================================================
+     14. CERTIFICATES
+     ============================================================ */
+     .cert-section
+     {
+       background: var(--bg-alt);
+     }
+  
+     .cert-intro
+     {
+       max-width: 580px;
+       font-size: 0.95rem;
+       color: var(--text-muted);
+       line-height: 1.75;
+       margin-top: -32px;
+       margin-bottom: 48px;
+     }
+  
+     .cert-intro strong
+     {
+       color: var(--accent);
+     }
+  
+     .cert-grid
+     {
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       gap: 20px;
+     }
+  
+     .cert-card
+     {
+       background: var(--bg-card);
+       border: 1px solid var(--border);
+       border-radius: 14px;
+       padding: 20px 18px 16px;
+       display: flex;
+       flex-direction: column;
+       gap: 10px;
+       position: relative;
+       overflow: hidden;
+       box-shadow: var(--shadow-sm);
+       transition: var(--transition);
+     }
+  
+     .cert-ribbon
+     {
+       position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+       height: 4px;
+       background: var(--r, var(--accent));
+       border-radius: 14px 14px 0 0;
+     }
+  
+     .cert-card:hover
+     {
+       transform: translateY(-6px);
+       box-shadow: var(--shadow-md);
+       border-color: transparent;
+     }
+  
+     .cert-top
+     {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+     }
+  
+     .cert-icon
+     {
+       width: 40px;
+       height: 40px;
+       border-radius: 10px;
+       background: color-mix(in srgb, var(--c, #2563eb) 14%, transparent);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       font-size: 1.1rem;
+       color: var(--c, #2563eb);
+       transition: var(--transition);
+     }
+  
+     .cert-card:hover .cert-icon
+     {
+       background: var(--c, #2563eb);
+       color: #fff;
+     }
+  
+     .cert-year
+     {
+       font-size: 0.7rem;
+       font-weight: 700;
+       font-family: 'Syne', sans-serif;
+       color: var(--text-muted);
+       background: var(--bg-alt);
+       border: 1px solid var(--border);
+       border-radius: 50px;
+       padding: 3px 10px;
+     }
+  
+     .cert-title
+     {
+       font-family: 'Syne', sans-serif;
+       font-size: 0.9rem;
+       font-weight: 700;
+       color: var(--text);
+       line-height: 1.35;
+     }
+  
+     .cert-issuer
+     {
+       font-size: 0.77rem;
+       font-weight: 600;
+       color: var(--accent);
+       display: flex;
+       align-items: center;
+       gap: 5px;
+     }
+  
+     .cert-issuer i
+     {
+       font-size: 0.68rem;
+     }
+  
+     .cert-desc
+     {
+       font-size: 0.77rem;
+       color: var(--text-muted);
+       line-height: 1.6;
+       flex: 1;
+     }
+  
+     .cert-footer
+     {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin-top: 6px;
+       padding-top: 10px;
+       border-top: 1px solid var(--border);
+     }
+  
+     .cert-badge
+     {
+       font-size: 0.68rem;
+       font-weight: 700;
+       color: #10b981;
+       background: rgba(16, 185, 129, 0.10);
+       border: 1px solid rgba(16, 185, 129, 0.28);
+       border-radius: 50px;
+       padding: 3px 10px;
+       display: flex;
+       align-items: center;
+       gap: 5px;
+     }
+  
+     .cert-badge::before
+     {
+       content: '';
+       width: 6px;
+       height: 6px;
+       border-radius: 50%;
+       background: #10b981;
+       display: inline-block;
+       animation: pulse-dot 1.8s ease-in-out infinite;
+     }
+  
+     .cert-view
+     {
+       font-size: 0.75rem;
+       font-weight: 600;
+       color: var(--text-muted);
+       display: flex;
+       align-items: center;
+       gap: 5px;
+       transition: color var(--transition);
+     }
+  
+     .cert-view:hover
+     {
+       color: var(--accent);
+     }
+  
+     .cert-view i
+     {
+       font-size: 0.62rem;
+     }
+
+         /* ============================================================
+       12. SKILLS — Tag / Pill format (NO progress bars)
+       ============================================================ */
+         .skills-section
+         {
+           background: var(--bg-alt);
+         }
+    
+         .skills-tag-grid
+         {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           gap: 40px;
+         }
+    
+         .skill-tag-col
+         {
+           background: var(--bg-card);
+           border: 1px solid var(--border);
+           border-radius: var(--radius);
+           padding: 32px 28px;
+           box-shadow: var(--shadow-sm);
+         }
+    
+         .skill-tag-header
+         {
+           display: flex;
+           align-items: center;
+           gap: 14px;
+           margin-bottom: 28px;
+           padding-bottom: 18px;
+           border-bottom: 1px solid var(--border);
+         }
+    
+         .skill-tag-icon
+         {
+           width: 44px;
+           height: 44px;
+           border-radius: 12px;
+           background: var(--bg-alt);
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           font-size: 1.2rem;
+           color: var(--accent);
+         }
+    
+         .skill-tag-header h3
+         {
+           font-family: 'Syne', sans-serif;
+           font-size: 1.05rem;
+           font-weight: 700;
+           color: var(--text);
+         }
+    
+         /* Tag pills grid */
+         .skill-tags
+         {
+           display: flex;
+           flex-wrap: wrap;
+           gap: 12px;
+         }
+    
+         .skill-tag
+         {
+           display: inline-flex;
+           align-items: center;
+           gap: 8px;
+           background: var(--bg-alt);
+           border: 1.5px solid var(--border);
+           border-radius: 50px;
+           padding: 9px 18px;
+           font-size: 0.86rem;
+           font-weight: 600;
+           color: var(--text);
+           transition: var(--transition);
+           cursor: default;
+         }
+    
+         .skill-tag i
+         {
+           font-size: 0.95rem;
+           color: var(--accent);
+           transition: var(--transition);
+         }
+    
+         .skill-tag:hover
+         {
+           background: var(--accent);
+           color: #fff;
+           border-color: var(--accent);
+           transform: translateY(-3px);
+           box-shadow: 0 6px 20px rgba(37, 99, 235, 0.25);
+         }
+    
+         .skill-tag:hover i
+         {
+           color: #fff;
+         }
+
+
 
 /* ============================================================
    1. CSS CUSTOM PROPERTIES (VARIABLES)
