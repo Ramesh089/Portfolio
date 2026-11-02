@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ramesh | About Me as a Future Professional</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- =====================================================
+       NAVIGATION BAR
+       ===================================================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a class="nav-logo" href="#home">R<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#strengths" class="nav-link">Strengths</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#vision" class="nav-link">Vision</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-moon" id="toggleIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- =====================================================
+       HERO SECTION
+       ===================================================== -->
+  <section class="hero" id="home">
+    <div class="hero-grid">
+      <div class="hero-text slide-left">
+        <span class="hero-badge">
+          <i class="fa-solid fa-circle-dot pulse"></i>
+          MCA Student &nbsp;|&nbsp; Future IT Professional
+        </span>
+        <span class="hero-badge">👋 Open to Opportunities</span>
+        <h1 class="hero-name">Hi, I'm<br /><em>Ramesh</em></h1>
+        <p class="hero-tagline">Passionate about building secure and scalable software solutions.</p>
+        <div class="hero-cta">
+          <a href="#about" class="btn btn-primary">Explore More <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#projects" class="btn btn-ghost">View Projects</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><strong>MCA</strong><span>Post Graduate</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><strong>BCA</strong><span>Foundation</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><strong>IT</strong><span>Future Ready</span></div>
+        </div>
+      </div>
+      <div class="hero-image slide-right">
+        <div class="image-ring">
+          <div class="image-wrapper">
+            <img
+              src="./image.png"
+              alt="Ramesh – MCA Student"
+              class="profile-img"
+              onerror="this.style.display='none'; document.getElementById('avatarFallback').style.display='flex';"
+            />
+            <div class="avatar-fallback" id="avatarFallback" style="display:none;">
+              <i class="fa-solid fa-user"></i>
+            </div>
+          </div>
+        </div>
+        <div class="float-badge badge-top"><i class="fa-solid fa-shield-halved"></i> Data Analyst</div>
+        <div class="float-badge badge-bottom"><i class="fa-solid fa-code"></i> Full Stack Dev</div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <span>Scroll</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+
+  <!-- =====================================================
+       ABOUT ME SECTION
+       ===================================================== -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <span class="section-label reveal">About Me</span>
+      <h2 class="section-title reveal">Who I Am</h2>
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <p>
+            I am currently pursuing <strong>Master of Computer Applications (MCA)</strong> with a strong interest in
+            software
+            development and problem solving. I completed my BCA and built a strong foundation in programming, databases,
+            and web
+            technologies.
+          </p>
+
+          <p>
+            During my academic journey, I developed a project titled <strong>"Cyber Security Awareness Portal"</strong>,
+            designed
+            to create awareness about cyber threats and provide a platform for reporting cyber incidents. This project
+            included
+            emergency alerts, educational content, and threat reporting functionality.
+          </p>
+
+          <p>
+            I aim to build a long-term career in the IT industry where I can contribute to innovative solutions and
+            continuously
+            grow as a professional.
+          </p>
+        </div>
+        <div class="about-highlight-cards">
+          <div class="h-card">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <div>
+              <h4>Education</h4>
+              <p>MCA (in progress) &middot; BCA Completed</p>
+            </div>
+          </div>
+          <div class="h-card">
+            <i class="fa-solid fa-briefcase"></i>
+            <div>
+              <h4>Internship</h4>
+              <p>LYD Technologies — Software Development</p>
+            </div>
+          </div>
+          <div class="h-card">
+            <i class="fa-solid fa-bullseye"></i>
+            <div>
+              <h4>Goal</h4>
+              <p>Long-term IT career contributing to innovative solutions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       STRENGTHS SECTION
+       ===================================================== -->
+  <section class="section strengths-section" id="strengths">
+    <div class="container">
+      <span class="section-label reveal">What I Bring</span>
+      <h2 class="section-title reveal">My Strengths</h2>
+      <div class="cards-grid">
+        <div class="strength-card reveal">
+          <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
+          <h3>Analytical Thinking</h3>
+          <p>Breaks complex problems into structured, logical solutions with a systematic and methodical approach.</p>
+        </div>
+        <div class="strength-card reveal">
+          <div class="card-icon"><i class="fa-solid fa-bolt"></i></div>
+          <h3>Quick Adaptability</h3>
+          <p>Learns new technologies and methodologies efficiently in fast-paced, ever-changing environments.</p>
+        </div>
+        <div class="strength-card reveal">
+          <div class="card-icon"><i class="fa-solid fa-medal"></i></div>
+          <h3>Consistency &amp; Discipline</h3>
+          <p>Maintains consistent focus and sustained effort toward achieving long-term professional goals.</p>
+        </div>
+        <div class="strength-card reveal">
+          <div class="card-icon"><i class="fa-solid fa-handshake"></i></div>
+          <h3>Responsibility</h3>
+          <p>Takes full ownership of assigned tasks and delivers results with honesty and accountability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       WEAKNESSES SECTION
+       ===================================================== -->
+  <section class="section weaknesses-section" id="weaknesses">
+    <div class="container">
+      <span class="section-label reveal">Self-Awareness</span>
+      <h2 class="section-title reveal">Areas I'm Improving</h2>
+      <div class="weakness-list reveal">
+        <div class="weakness-item">
+          <div class="w-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+          <div>
+            <h4>Overanalyzing Situations</h4>
+            <p>Working on balancing thorough analysis with timely, decisive action to stay productive and efficient.</p>
+          </div>
+        </div>
+        <div class="weakness-item">
+          <div class="w-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+          <div>
+            <h4>High Self-Expectations</h4>
+            <p>Learning to maintain a steady and balanced approach rather than placing excessive pressure on personal
+              performance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       CAREER VALUES SECTION
+       ===================================================== -->
+  <section class="section values-section" id="values">
+    <div class="container">
+      <span class="section-label reveal">What Drives Me</span>
+      <h2 class="section-title reveal">Career Values</h2>
+      <div class="values-grid reveal">
+        <div class="value-card">
+          <i class="fa-solid fa-book-open"></i>
+          <h4>Continuous Learning</h4>
+          <p>Committed to upgrading skills and staying current in an ever-evolving technology landscape.</p>
+        </div>
+        <div class="value-card">
+          <i class="fa-solid fa-scale-balanced"></i>
+          <h4>Professional Ethics</h4>
+          <p>Upholding honesty, integrity, and responsibility in every professional engagement.</p>
+        </div>
+        <div class="value-card">
+          <i class="fa-solid fa-chart-line"></i>
+          <h4>Growth-Oriented Mindset</h4>
+          <p>Embracing challenges as opportunities and consistently pushing toward personal excellence.</p>
+        </div>
+        <div class="value-card">
+          <i class="fa-solid fa-people-group"></i>
+          <h4>Team Contribution</h4>
+          <p>Collaborating effectively, sharing knowledge, and elevating the team's collective outcomes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       PERSONALITY REFLECTION SECTION
+       ===================================================== -->
+  <section class="section personality-section" id="personality">
+    <div class="container">
+      <span class="section-label reveal centered-label">Personality</span>
+      <h2 class="section-title reveal center-title">Personality Reflection</h2>
+      <div class="personality-card reveal">
+        <div class="personality-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+        <p>Ramesh considers himself a <strong>focused and goal-driven individual</strong>. He prefers structured
+          environments where he can concentrate deeply and deliver quality outcomes. He is observant, thoughtful, and
+          motivated by <strong>long-term professional growth</strong>.</p>
+        <div class="personality-traits">
+          <span><i class="fa-solid fa-check"></i> Goal-Driven</span>
+          <span><i class="fa-solid fa-check"></i> Observant</span>
+          <span><i class="fa-solid fa-check"></i> Thoughtful</span>
+          <span><i class="fa-solid fa-check"></i> Structured</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       SKILLS SECTION
+       NO progress bars — clean tag/pill format
+       ===================================================== -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <span class="section-label reveal">Capabilities</span>
+      <h2 class="section-title reveal">Skills &amp; Expertise</h2>
+
+      <div class="skills-tag-grid">
+
+        <!-- Technical Skills -->
+        <div class="skill-tag-col reveal">
+          <div class="skill-tag-header">
+            <div class="skill-tag-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Technical Skills</h3>
+          </div>
+          <div class="skill-tags">
+            <div class="skill-tag">
+              <i class="fa-brands fa-python"></i>
+              <span>Python</span>
+            </div>
+            <div class="skill-tag">
+              <i class="fa-brands fa-js"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-tag">
+              <i class="fa-solid fa-database"></i>
+              <span>MySQL</span>
+            </div>
+            <div class="skill-tag">
+              <i class="fa-solid fa-chart-pie"></i>
+              <span>Power BI</span>
+            </div>
+            <div class="skill-tag">
+              <i class="fa-brands fa-git-alt"></i>
+              <span>Git</span>
+            </div>
+            <div class="skill-tag">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub — Version Control</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-tag-col reveal">
+          <div class="skill-tag-header">
+            <div class="skill-tag-icon"><i class="fa-solid fa-star"></i></div>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="skill-tags">
+            <div class="skill-tag">
+              <i class="fa-solid fa-lightbulb"></i>
+              <span>Problem-Solving</span>
+            </div>
+            <div class="skill-tag">
+              <i class="fa-solid fa-arrows-rotate"></i>
+              <span>Adaptability</span>
+            </div>
+            <div class="skill-tag">
+              <i class="fa-solid fa-clock"></i>
+              <span>Time Management</span>
+            </div>
+            <div class="skill-tag">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span>Accountability</span>
+            </div>
+            <div class="skill-tag">
+              <i class="fa-solid fa-people-group"></i>
+              <span>Team Collaboration</span>
+            </div>
+            <div class="skill-tag">
+              <i class="fa-solid fa-comments"></i>
+              <span>Communication</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /skills-tag-grid -->
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       PROJECTS SECTION — Compact mini cards
+       ===================================================== -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <span class="section-label reveal">Portfolio</span>
+      <h2 class="section-title reveal">Projects</h2>
+
+      <div class="projects-mini-grid">
+
+        <!-- Project 1 -->
+        <div class="proj-mini-card reveal">
+          <div class="proj-mini-top">
+            <div class="proj-mini-icon" style="--icon-color:#2563eb;">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="proj-mini-links">
+              <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h4>Cyber Security Awareness Portal</h4>
+          <p class="proj-sem">Academic Project</p>
+          <p>Web app to spread cyber-threat awareness with emergency alerts, education resources &amp; incident
+            reporting.</p>
+          <div class="proj-mini-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>DB</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="proj-mini-card reveal">
+          <div class="proj-mini-top">
+            <div class="proj-mini-icon" style="--icon-color:#10b981;">
+              <i class="fa-solid fa-store"></i>
+            </div>
+            <div class="proj-mini-links">
+              <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h4>Mytra Clone</h4>
+          <p class="proj-sem">BCA 3th Semester</p>
+          <p>A pixel-perfect front-end clone of the Myntra e-commerce platform with product listings, filters &amp; cart
+            UI.</p>
+          <div class="proj-mini-tags">
+            <span>HTML</span><span>CSS</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="proj-mini-card reveal">
+          <div class="proj-mini-top">
+            <div class="proj-mini-icon" style="--icon-color:#f59e0b;">
+              <i class="fa-solid fa-image"></i>
+            </div>
+            <div class="proj-mini-links">
+              <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h4>Crypto Image Generator</h4>
+          <p class="proj-sem">MCA 2nd Semester</p>
+          <p>Python-based tool that encrypts and hides secret data inside images using steganography techniques.</p>
+          <div class="proj-mini-tags">
+            <span>Python</span><span>Steganography</span>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="proj-mini-card reveal">
+          <div class="proj-mini-top">
+            <div class="proj-mini-icon" style="--icon-color:#8b5cf6;">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <div class="proj-mini-links">
+              <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h4>Student Management System</h4>
+          <p class="proj-sem">BCA 5th Semester</p>
+          <p>CRUD app for managing student records, grades &amp; attendance with role-based login for admins.</p>
+          <div class="proj-mini-tags">
+            <span>Python</span><span>MySQL</span><span>HTML</span><span>CSS</span>
+          </div>
+        </div>
+
+      </div><!-- /projects-mini-grid -->
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       CERTIFICATES SECTION
+       Micro Power | Microsoft Azure | Internship LYD
+       ===================================================== -->
+  <section class="section cert-section" id="certificates">
+    <div class="container">
+      <span class="section-label reveal">Achievements</span>
+      <h2 class="section-title reveal">Certificates</h2>
+      <p class="cert-intro reveal">Industry-recognised credentials from <strong>Micro Power</strong>,
+        <strong>Microsoft</strong> and <strong>LYD Technologies</strong>.</p>
+
+      <div class="cert-grid">
+
+        <!-- Certificate 1 — Micro Power BI -->
+        <div class="cert-card reveal">
+          <div class="cert-ribbon" style="--r:#f59e0b;"></div>
+          <div class="cert-top">
+            <div class="cert-icon" style="--c:#f59e0b;">
+              <i class="fa-solid fa-chart-pie"></i>
+            </div>
+            <span class="cert-year">2024</span>
+          </div>
+          <h4 class="cert-title">Microsoft Power BI</h4>
+          <p class="cert-issuer"><i class="fa-solid fa-award"></i> Micro Power</p>
+          <p class="cert-desc">Data visualisation, interactive dashboards, DAX formulas, and business intelligence
+            reporting using Power BI Desktop.</p>
+          <div class="cert-footer">
+            <span class="cert-badge">Verified</span>
+            <a href="#" class="cert-view">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <!-- Certificate 2 — Microsoft Azure Fundamentals -->
+        <div class="cert-card reveal">
+          <div class="cert-ribbon" style="--r:#0ea5e9;"></div>
+          <div class="cert-top">
+            <div class="cert-icon" style="--c:#0ea5e9;">
+              <i class="fa-solid fa-cloud"></i>
+            </div>
+            <span class="cert-year">2024</span>
+          </div>
+          <h4 class="cert-title">Microsoft Azure Fundamentals</h4>
+          <p class="cert-issuer"><i class="fa-solid fa-award"></i> Microsoft</p>
+          <p class="cert-desc">Core cloud concepts, Azure services, security, privacy, compliance, and pricing
+            structures. (AZ-900 level)</p>
+          <div class="cert-footer">
+            <span class="cert-badge">Verified</span>
+            <a href="#" class="cert-view">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <!-- Certificate 3 — Internship LYD Technologies -->
+        <div class="cert-card reveal">
+          <div class="cert-ribbon" style="--r:#10b981;"></div>
+          <div class="cert-top">
+            <div class="cert-icon" style="--c:#10b981;">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <span class="cert-year">2024</span>
+          </div>
+          <h4 class="cert-title">Internship Certificate</h4>
+          <p class="cert-issuer"><i class="fa-solid fa-building"></i> LYD Technologies</p>
+          <p class="cert-desc">Completed a software development internship gaining hands-on experience in real-world
+            project development and teamwork.</p>
+          <div class="cert-footer">
+            <span class="cert-badge">Verified</span>
+            <a href="#" class="cert-view">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+
+      </div><!-- /cert-grid -->
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       PROFESSIONAL VISION SECTION
+       ===================================================== -->
+  <section class="section vision-section" id="vision">
+    <div class="container">
+      <div class="vision-inner reveal">
+        <span class="section-label centered-label">Future</span>
+        <h2 class="section-title center-title">Professional Vision</h2>
+        <blockquote class="vision-quote">
+          "My vision is to become a skilled software professional who builds secure, scalable, and efficient
+          applications. I aim to continuously upgrade my technical expertise and contribute meaningfully to innovative
+          and impactful technology solutions."
+        </blockquote>
+        <div class="vision-pillars">
+          <div class="pillar"><i class="fa-solid fa-lock"></i><span>Secure Systems</span></div>
+          <div class="pillar"><i class="fa-solid fa-server"></i><span>Scalable Apps</span></div>
+          <div class="pillar"><i class="fa-solid fa-lightbulb"></i><span>Innovation</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       HABIT TO IMPROVE SECTION
+       ===================================================== -->
+  <section class="section habit-section" id="habit">
+    <div class="container">
+      <span class="section-label reveal">Growth Mindset</span>
+      <h2 class="section-title reveal">Habit to Improve Before Entering Industry</h2>
+      <div class="habit-card reveal">
+        <div class="habit-icon"><i class="fa-solid fa-clock"></i></div>
+        <div class="habit-content">
+          <h3>Improving Time Management Efficiency</h3>
+          <p>Ramesh aims to further strengthen time management skills by prioritizing tasks effectively and improving
+            productivity in structured work environments. He is actively practising scheduling techniques and
+            task-batching strategies to optimize daily output.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       CONTACT SECTION
+       ===================================================== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <span class="section-label reveal">Get In Touch</span>
+      <h2 class="section-title reveal">Contact Me</h2>
+      <p class="contact-intro reveal">Have an opportunity, project, or just want to say hello? I'd love to hear from
+        you.</p>
+
+      <div class="contact-grid reveal">
+        <!-- Info -->
+        <div class="contact-info">
+          <div class="contact-info-card">
+            <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4><a href="mailto:rameshkorabar89@gmail.com">rameshkorabar89@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="ci-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4><a href="tel:+918310715318">+91 8310715318</a>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>Bengalore - karnataka &amp; on-site</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="ci-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <h4>Availability</h4>
+              <p>Mon – Sat, 9 AM – 7 PM IST</p>
+            </div>
+          </div>
+          <div class="contact-social">
+            <span>Find me on:</span>
+            <div class="contact-social-icons">
+              <a href="#" class="cs-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="cs-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="cs-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-wrapper">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactName">Full Name <span class="req">*</span></label>
+                <div class="input-wrap">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="text" id="contactName" name="name" placeholder="Your full name" required />
+                </div>
+                <span class="field-error" id="nameError">Please enter your name.</span>
+              </div>
+              <div class="form-group">
+                <label for="contactEmail">Email Address <span class="req">*</span></label>
+                <div class="input-wrap">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input type="email" id="contactEmail" name="email" placeholder="your@email.com" required />
+                </div>
+                <span class="field-error" id="emailError">Please enter a valid email.</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contactSubject">Subject <span class="req">*</span></label>
+              <div class="input-wrap">
+                <i class="fa-solid fa-tag"></i>
+                <input type="text" id="contactSubject" name="subject" placeholder="What is this about?" required />
+              </div>
+              <span class="field-error" id="subjectError">Please enter a subject.</span>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message <span class="req">*</span></label>
+              <div class="input-wrap textarea-wrap">
+                <i class="fa-solid fa-message"></i>
+                <textarea id="contactMessage" name="message" rows="5" placeholder="Write your message here…"
+                  required></textarea>
+              </div>
+              <span class="field-error" id="messageError">Please enter your message.</span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fa-solid fa-circle-check"></i>
+              <div><strong>Message sent!</strong>
+                <p>Thank you for reaching out. I'll get back to you soon.</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="footer-logo">Ramesh<em>.</em></span>
+          <p>MCA Student &middot; Future IT Professional<br />Building secure, thoughtful digital experiences.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Connect</h4>
+          <div class="social-icons">
+            <a href="https://github.com/Ramesh089" class="social-icon" aria-label="GitHub"><i
+                class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ramesh-korabar-702854251/" class="social-icon" aria-label="LinkedIn"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:rameshkorabar89@gmail.com" class="social-icon" aria-label="Email"><i
+                class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ramesh | All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
